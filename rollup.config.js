@@ -30,7 +30,7 @@ const plugins = (minify) =>
       module: {
         type: 'es6'
       },
-      sourceMaps: true
+      sourceMaps: false
     }),
     minify
       ? terser({
@@ -54,7 +54,7 @@ export default [
       file: 'dist/chart.umd.js',
       format: 'umd',
       indent: false,
-      sourcemap: true,
+      sourcemap: false,
     },
   },
 
@@ -75,7 +75,7 @@ export default [
       banner,
       format: 'esm',
       indent: false,
-      sourcemap: true,
+      sourcemap: false,
     },
   },
 
@@ -96,7 +96,7 @@ export default [
       banner,
       format: 'commonjs',
       indent: false,
-      sourcemap: true,
+      sourcemap: false,
     },
   }
 ];
